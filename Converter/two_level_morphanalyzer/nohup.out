@@ -1,0 +1,331 @@
+nohup: failed to run command './python': No such file or directory
+Watching for file changes with StatReloader
+[13/Oct/2023 11:07:25] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[13/Oct/2023 11:07:25] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10447
+[13/Oct/2023 11:07:27] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:07:28] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[13/Oct/2023 11:07:30] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:08:36] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[13/Oct/2023 11:09:02] "POST /text_to_speech/ HTTP/1.1" 200 289
+[13/Oct/2023 11:09:02] "GET /media/audios/1697195342.0176597.mp3 HTTP/1.1" 200 6792
+[13/Oct/2023 11:09:14] "POST /text_to_speech/ HTTP/1.1" 200 288
+[13/Oct/2023 11:09:14] "GET /media/audios/1697195354.6765583.mp3 HTTP/1.1" 200 8150
+[13/Oct/2023 11:09:22] "POST /text_to_speech/ HTTP/1.1" 200 68
+[13/Oct/2023 11:09:27] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[13/Oct/2023 11:09:41] "POST /speech_to_text/ HTTP/1.1" 200 348
+[13/Oct/2023 11:09:41] "GET /media/audios/recorded/audio_6zk_l2r_new.wav HTTP/1.1" 200 468524
+[13/Oct/2023 11:09:53] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[13/Oct/2023 11:10:01] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:10:01] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[13/Oct/2023 11:10:01] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[13/Oct/2023 11:11:59] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[13/Oct/2023 11:12:00] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:12:01] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:12:17] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:12:17] "GET /static/analyzer/css/style.css HTTP/1.1" 304 0
+[13/Oct/2023 11:12:17] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 304 0
+[13/Oct/2023 11:12:17] "GET /static/analyzer/js/audio.js HTTP/1.1" 304 0
+[13/Oct/2023 11:12:31] "GET /audio_to_text/ HTTP/1.1" 200 11299
+[13/Oct/2023 11:12:34] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[13/Oct/2023 11:13:19] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 11:13:19] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[13/Oct/2023 11:13:19] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[13/Oct/2023 14:27:56] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 14:27:56] "GET / HTTP/1.1" 200 7052
+[13/Oct/2023 14:27:57] code 505, message Invalid HTTP version (2.0)
+[13/Oct/2023 14:27:57] "PRI * HTTP/2.0" 505 -
+[13/Oct/2023 14:27:58] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+Not Found: /favicon.ico
+[13/Oct/2023 14:27:58] "GET /favicon.ico HTTP/1.1" 404 3268
+[13/Oct/2023 15:18:56] "GET / HTTP/1.1" 200 7052
+Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Bad Request: /
+[13/Oct/2023 15:50:18] "GET / HTTP/1.1" 400 67490
+[13/Oct/2023 22:18:26] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 01:43:47] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 01:48:22,941] - Broken pipe from ('167.94.146.55', 37326)
+[14/Oct/2023 01:48:24] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 01:48:24] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 01:48:24] code 505, message Invalid HTTP version (2.0)
+[14/Oct/2023 01:48:24] "PRI * HTTP/2.0" 505 -
+[14/Oct/2023 01:48:25] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+Not Found: /favicon.ico
+[14/Oct/2023 01:48:25] "GET /favicon.ico HTTP/1.1" 404 3268
+Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Bad Request: /
+[14/Oct/2023 11:52:49] "GET / HTTP/1.1" 400 67490
+Not Found: /c1Xp
+[14/Oct/2023 13:51:22] "GET /c1Xp HTTP/1.1" 404 3247
+[14/Oct/2023 20:26:26] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 20:26:27] "GET / HTTP/1.1" 200 7052
+[14/Oct/2023 20:26:28] code 505, message Invalid HTTP version (2.0)
+[14/Oct/2023 20:26:28] "PRI * HTTP/2.0" 505 -
+[14/Oct/2023 20:26:29] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+Not Found: /favicon.ico
+[14/Oct/2023 20:26:29] "GET /favicon.ico HTTP/1.1" 404 3268
+[15/Oct/2023 12:36:01] "GET / HTTP/1.1" 200 7052
+[15/Oct/2023 12:36:03] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[15/Oct/2023 13:22:07] "GET / HTTP/1.1" 200 7052
+Not Found: /dHeK
+[15/Oct/2023 14:55:55] "GET /dHeK HTTP/1.1" 404 3247
+[15/Oct/2023 22:49:51] "GET / HTTP/1.1" 200 7052
+Watching for file changes with StatReloader
+[17/Oct/2023 12:02:40] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[17/Oct/2023 12:03:12] "POST /text_to_speech/ HTTP/1.1" 200 240
+[17/Oct/2023 12:03:12] "GET /media/audios/1697544192.1812024.mp3 HTTP/1.1" 200 3971
+[17/Oct/2023 12:03:22] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 12:03:22] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[17/Oct/2023 12:03:22] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[17/Oct/2023 12:03:23] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[17/Oct/2023 12:03:33] "POST /speech_to_text/ HTTP/1.1" 200 182
+[17/Oct/2023 12:03:33] "GET /media/audios/recorded/audio_rxk_03v_new.wav HTTP/1.1" 200 253484
+[17/Oct/2023 12:04:31] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 12:04:31] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[17/Oct/2023 12:04:31] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[17/Oct/2023 12:04:33] "GET /audio_to_text/ HTTP/1.1" 200 11299
+[17/Oct/2023 12:04:38] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[17/Oct/2023 12:13:31] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 12:13:31] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 12:13:32] code 505, message Invalid HTTP version (2.0)
+[17/Oct/2023 12:13:32] "PRI * HTTP/2.0" 505 -
+[17/Oct/2023 12:13:32] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+Not Found: /favicon.ico
+[17/Oct/2023 12:13:33] "GET /favicon.ico HTTP/1.1" 404 3268
+[17/Oct/2023 12:14:04] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 12:14:05] code 505, message Invalid HTTP version (2.0)
+[17/Oct/2023 12:14:05] "PRI * HTTP/2.0" 505 -
+[17/Oct/2023 12:14:06] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+Not Found: /favicon.ico
+[17/Oct/2023 12:14:07] "GET /favicon.ico HTTP/1.1" 404 3268
+Not Found: /aaa9
+[17/Oct/2023 14:42:54] "GET /aaa9 HTTP/1.1" 404 3247
+Not Found: /aab8
+[17/Oct/2023 14:42:56] "GET /aab8 HTTP/1.1" 404 3247
+[17/Oct/2023 14:42:57] "GET / HTTP/1.1" 200 7052
+Invalid HTTP_HOST header: 'dgx.ulut.kg:8000'. You may need to add 'dgx.ulut.kg' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dgx.ulut.kg:8000'. You may need to add 'dgx.ulut.kg' to ALLOWED_HOSTS.
+Bad Request: /
+[17/Oct/2023 15:31:51] "GET / HTTP/1.1" 400 67249
+[17/Oct/2023 16:40:09] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 16:40:16] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 16:40:17] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[17/Oct/2023 16:40:18] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5421
+Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'laravelbektemir.duckdns.org:8000'. You may need to add 'laravelbektemir.duckdns.org' to ALLOWED_HOSTS.
+Bad Request: /
+[17/Oct/2023 17:13:47] "GET / HTTP/1.1" 400 67488
+[17/Oct/2023 17:26:05] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 17:26:06] code 400, message Bad HTTP/0.9 request type ('t3')
+[17/Oct/2023 17:26:06] "t3 12.1.2" 400 -
+[17/Oct/2023 17:26:17] "GET / HTTP/1.1" 200 7052
+[17/Oct/2023 17:26:18] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[17/Oct/2023 17:26:19] "GET /static/analyzer/img/til.png HTTP/1.1" 200 19191
+[17/Oct/2023 17:26:21] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5421
+Not Found: /robots.txt
+[17/Oct/2023 17:26:21] "GET /robots.txt HTTP/1.1" 404 3265
+Not Found: /sitemap.xml
+[17/Oct/2023 17:26:22] "GET /sitemap.xml HTTP/1.1" 404 3268
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[23/Oct/2023 09:23:19] "GET / HTTP/1.1" 200 7052
+[23/Oct/2023 09:23:19] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10447
+[23/Oct/2023 09:23:19] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5421
+[23/Oct/2023 09:23:19] "GET /static/analyzer/img/til.png HTTP/1.1" 200 19191
+[23/Oct/2023 09:23:19] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[23/Oct/2023 09:23:19] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[23/Oct/2023 09:23:19] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[23/Oct/2023 09:23:23] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[23/Oct/2023 09:23:57] "POST /text_to_speech/ HTTP/1.1" 200 561
+[23/Oct/2023 09:23:57] "GET /media/audios/1698053036.9733696.mp3 HTTP/1.1" 200 23824
+[23/Oct/2023 09:25:20] "POST /text_to_speech/ HTTP/1.1" 200 68
+[23/Oct/2023 09:25:27] "POST /text_to_speech/ HTTP/1.1" 200 560
+[23/Oct/2023 09:25:27] "GET /media/audios/1698053127.4804115.mp3 HTTP/1.1" 200 25287
+[23/Oct/2023 09:25:38] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[23/Oct/2023 09:26:04] "POST /speech_to_text/ HTTP/1.1" 200 167
+[23/Oct/2023 09:26:04] "GET /media/audios/recorded/audio_jxfn_kcgo_new.wav HTTP/1.1" 200 234284
+[23/Oct/2023 09:27:42] "POST /speech_to_text/ HTTP/1.1" 200 1260
+[23/Oct/2023 09:27:42] "GET /media/audios/recorded/audio_q3j3_9fvl_new.wav HTTP/1.1" 200 245804
+[23/Oct/2023 09:29:45] "GET /audio_to_text/ HTTP/1.1" 200 11299
+[23/Oct/2023 09:30:02] "POST /audio_to_text/ HTTP/1.1" 200 70
+[23/Oct/2023 09:30:07] "POST /audio_to_text/ HTTP/1.1" 200 46
+[23/Oct/2023 09:30:44] "POST /audio_to_text/ HTTP/1.1" 200 46
+[23/Oct/2023 09:30:55] "GET /text_to_speech/ HTTP/1.1" 200 12589
+[23/Oct/2023 09:31:20] "POST /text_to_speech/ HTTP/1.1" 200 829
+[23/Oct/2023 09:31:20] "GET /media/audios/1698053479.8315036.mp3 HTTP/1.1" 200 36049
+[23/Oct/2023 09:34:23] "GET /text_to_speech/ HTTP/1.1" 200 12615
+[23/Oct/2023 09:35:26] "GET /text_to_speech/ HTTP/1.1" 200 12666
+[23/Oct/2023 09:39:35] "GET /text_to_speech/ HTTP/1.1" 200 12664
+[23/Oct/2023 09:39:45] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[23/Oct/2023 09:39:48] "GET / HTTP/1.1" 200 7052
+[23/Oct/2023 09:39:48] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[23/Oct/2023 09:39:49] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[23/Oct/2023 09:39:52] "GET /text_to_speech/ HTTP/1.1" 200 12664
+/mnt/ks/Works/site/Converter/two_level_morphanalyzer/analyzer/forms.py changed, reloading.
+Validating models...
+
+System check identified no issues (0 silenced).
+October 23, 2023 - 09:22:04
+Django version 4.1.7, using settings 'two_level_morphanalyzer.settings'
+Starting development server at https://80.72.180.130:8000/
+Using SSL certificate: /etc/ssl/certs/django_site2.crt
+Using SSL key: /mnt/ks/Works/site/Converter/two_level_morphanalyzer/django_site2.key
+Quit the server with CONTROL-C.
+Тариф не кийин.
+ වළ්්්් ස්්් ස්්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස්් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් සස ස් ස් ස් සස සස ස් සස සස ස 
+text/x-python
+text/x-python
+audio/wav
+Watching for file changes with StatReloader
+[23/Oct/2023 09:41:02] "GET /text_to_speech/ HTTP/1.1" 200 12644
+[23/Oct/2023 09:41:03] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10447
+[23/Oct/2023 09:41:03] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5383
+[23/Oct/2023 09:41:03] "GET /static/analyzer/img/til.png HTTP/1.1" 200 19191
+[23/Oct/2023 09:41:03] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+/mnt/ks/Works/site/Converter/two_level_morphanalyzer/analyzer/forms.py changed, reloading.
+Validating models...
+
+System check identified no issues (0 silenced).
+October 23, 2023 - 09:41:02
+Django version 4.1.7, using settings 'two_level_morphanalyzer.settings'
+Starting development server at https://80.72.180.130:8000/
+Using SSL certificate: /etc/ssl/certs/django_site2.crt
+Using SSL key: /mnt/ks/Works/site/Converter/two_level_morphanalyzer/django_site2.key
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[23/Oct/2023 09:42:06] "GET /text_to_speech/ HTTP/1.1" 200 12660
+[23/Oct/2023 09:42:06] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10447
+[23/Oct/2023 09:42:45] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[23/Oct/2023 09:42:45] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10447
+[23/Oct/2023 09:42:45] "GET /static/analyzer/js/audio.js HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+[24/Oct/2023 03:23:47] "GET /audio_to_text/ HTTP/1.1" 200 11299
+[24/Oct/2023 03:23:48] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10767
+[24/Oct/2023 03:23:48] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5383
+[24/Oct/2023 03:23:48] "GET /static/analyzer/img/til.png HTTP/1.1" 200 19191
+[24/Oct/2023 03:23:49] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 03:23:51] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[24/Oct/2023 03:23:52] "GET / HTTP/1.1" 200 7135
+[24/Oct/2023 03:23:52] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[24/Oct/2023 03:23:52] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[24/Oct/2023 03:24:52] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 03:25:35] "POST /text_to_speech/ HTTP/1.1" 200 328
+[24/Oct/2023 03:25:35] "GET /media/audios/1698117935.473099.mp3 HTTP/1.1" 200 9822
+[24/Oct/2023 03:25:49] "POST /text_to_speech/ HTTP/1.1" 200 328
+[24/Oct/2023 03:25:49] "GET /media/audios/1698117949.3396058.mp3 HTTP/1.1" 200 10449
+[24/Oct/2023 03:25:55] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[24/Oct/2023 03:26:14] "POST /speech_to_text/ HTTP/1.1" 200 466
+[24/Oct/2023 03:26:14] "GET /media/audios/recorded/audio_jqb0_6xwu_new.wav HTTP/1.1" 200 614444
+[24/Oct/2023 03:28:42] "POST /speech_to_text/ HTTP/1.1" 200 479
+[24/Oct/2023 03:28:42] "GET /media/audios/recorded/audio_rkhy_ugt1_new.wav HTTP/1.1" 200 579884
+[24/Oct/2023 03:29:17] "POST /speech_to_text/ HTTP/1.1" 200 537
+[24/Oct/2023 03:29:17] "GET /media/audios/recorded/audio_ou1l_pjvo_new.wav HTTP/1.1" 200 921644
+[24/Oct/2023 03:30:03] "POST /speech_to_text/ HTTP/1.1" 200 420
+[24/Oct/2023 03:30:03] "GET /media/audios/recorded/audio_vtf7_o2jx_new.wav HTTP/1.1" 200 1132844
+[24/Oct/2023 03:30:26] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 03:31:56] "POST /text_to_speech/ HTTP/1.1" 200 21
+[24/Oct/2023 03:32:05] "POST /text_to_speech/ HTTP/1.1" 200 44
+[24/Oct/2023 03:33:06] "POST /text_to_speech/ HTTP/1.1" 200 68
+[24/Oct/2023 03:33:14] "POST /text_to_speech/ HTTP/1.1" 200 68
+[24/Oct/2023 03:36:34] "POST /text_to_speech/ HTTP/1.1" 200 1019
+[24/Oct/2023 03:36:34] "GET /media/audios/1698118593.830105.mp3 HTTP/1.1" 200 50155
+[24/Oct/2023 03:36:49] "GET / HTTP/1.1" 200 7135
+[24/Oct/2023 03:36:49] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[24/Oct/2023 03:36:49] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+----------------------------------------
+Exception happened during processing of request from ('77.95.56.87', 52477)
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/site/lib/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/servers/basehttp.py", line 202, in handle
+    self.handle_one_request()
+  File "/home/user/anaconda3/envs/site/lib/python3.8/site-packages/django/core/servers/basehttp.py", line 212, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home/user/anaconda3/envs/site/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: [Errno 110] Connection timed out
+----------------------------------------
+Not Found: /robots.txt
+[24/Oct/2023 03:54:25] "GET /robots.txt HTTP/1.1" 404 3265
+[24/Oct/2023 03:54:25] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[24/Oct/2023 04:29:22] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 04:29:26] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[24/Oct/2023 04:29:26] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 04:54:08] "GET / HTTP/1.1" 200 7135
+[24/Oct/2023 04:54:08] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[24/Oct/2023 04:54:08] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[24/Oct/2023 06:45:35] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[24/Oct/2023 06:45:35] "GET /static/analyzer/css/style.css HTTP/1.1" 304 0
+[24/Oct/2023 06:45:35] "GET /static/analyzer/js/audio.js HTTP/1.1" 304 0
+[24/Oct/2023 07:15:34] "GET / HTTP/1.1" 200 7135
+[24/Oct/2023 07:15:35] "GET /speech_to_text/ HTTP/1.1" 200 5429
+Watching for file changes with StatReloader
+[27/Oct/2023 10:13:33] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[27/Oct/2023 10:13:33] "GET /static/analyzer/css/style.css HTTP/1.1" 200 10767
+[27/Oct/2023 10:13:33] "GET /static/analyzer/js/audio.js HTTP/1.1" 200 5383
+[27/Oct/2023 10:13:33] "GET /static/analyzer/img/til.png HTTP/1.1" 200 19191
+[27/Oct/2023 10:13:33] "GET /static/analyzer/img/favicon.ico HTTP/1.1" 200 1150
+[27/Oct/2023 10:13:35] "GET / HTTP/1.1" 200 7135
+[27/Oct/2023 10:13:35] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[27/Oct/2023 10:13:35] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[27/Oct/2023 10:13:36] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[27/Oct/2023 10:13:59] "POST /text_to_speech/ HTTP/1.1" 200 367
+[27/Oct/2023 10:14:00] "GET /media/audios/1698401639.8215415.mp3 HTTP/1.1" 200 12330
+[27/Oct/2023 10:14:15] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[27/Oct/2023 10:14:17] "GET / HTTP/1.1" 200 7135
+[27/Oct/2023 10:14:17] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[27/Oct/2023 10:14:17] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921
+[27/Oct/2023 10:22:09] "GET / HTTP/1.1" 200 7135
+[27/Oct/2023 10:57:49] "GET / HTTP/1.1" 200 7135
+[27/Oct/2023 10:57:52] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[27/Oct/2023 10:57:58] "GET /speech_to_text/ HTTP/1.1" 200 5429
+[27/Oct/2023 10:58:02] "GET /audio_to_text/ HTTP/1.1" 200 11299
+[27/Oct/2023 10:58:27] "GET /text_to_speech/ HTTP/1.1" 200 12606
+[27/Oct/2023 10:59:20] "GET / HTTP/1.1" 200 7135
+[27/Oct/2023 10:59:20] "GET /static/analyzer/img/gerb.png HTTP/1.1" 200 19607
+[27/Oct/2023 10:59:20] "GET /static/analyzer/img/speech.jpg HTTP/1.1" 200 45921

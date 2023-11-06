@@ -1,0 +1,177 @@
+{% extends 'analyzer/base.html' %}
+{% load static %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+            <div class="col">
+                <br>
+
+
+                
+
+                <p class="lead" style="font-size: 18px;">Аудиофайл тандаңыз:</p>
+                <p style="font-size: 14px; margin-top: 10px"> Эскертүү: Аудиофайлдын көлөмү 5 Мб тан ашпоого тийиш</p>
+                <form method="post" action="audio_to_text" enctype="multipart/form-data">
+                    {% csrf_token %}
+                {{ form.audio_file }}
+                    <br><br>
+                    <p id="is_not_valid_info2" style="color: red; display: none;">wav же mp3 тибиндеги аудиофайл гана киргизиңиз </p>
+
+                <p id="is_not_valid_info" style="color: red; display: none;">Аудиофайлдын көлөмү 5 Мб тан чоң</p>
+                    <br>
+                    {{ form.captcha2 }}
+                    <p id="captcha_error" style="color: red; display: none;">Капчаны толтуруу талап кылынат </p>
+
+                    
+                        <button type="submit" class="btn btn-primary analyzer-button" style="margin-left: 0; margin-bottom: 10px" id="submitBtn">Киргизүү</button>
+                        <button id="loading2" class="btn btn-primary analyzer-button hidden" style="margin-left: 0; margin-bottom: 10px; width: 170px">
+              		<span class="spinner-border spinner-border-sm"></span>
+              		Күтө туруңуз...
+            		</button>
+                    
+                </form>
+                <div class="col-sm-6" style="margin-top: 20px; width: 250px">
+            
+            </div>
+            <p id="audio_info" style="font-size: 18px; display: none;  ">Аудиофайл:</p>
+		<div id="audio_speed" class="hidden">
+                <input type="range" class="form-range" id="speedRange" min="0.1"
+                       max="2.0" step="0.1" value="1.0" list="markers" style="width: 250px;">
+                <datalist id="markers">
+		      <option value="0.1" label="0.1x"></option>
+		      <option value="0.5" label="0.5x"></option>
+		      <option value="1.0" label="1.0x"></option>
+		      <option value="1.5" label="1.5x"></option>
+		      <option value="2.0" label="2.0x"></option>
+		    </datalist>
+		        <p>Ылдамдык: <output id="speed_value"></output>x</p>
+		 </div>
+                <audio controls id="audioPlayer" style="display: none; width: 380px;">
+                    <source src="" type="audio/wav">
+                    <source src="" type="audio/mpeg">
+                Браузериңиз аудио элементти колдобойт
+                </audio>
+
+                <p id="audio_text" style="font-size: 18px; display: none; ">Текст:</p>
+                <div class="col-sm-8" style="margin-top: 5px">
+                <p> <span id="myText2"> </span></p>
+                </div>
+             </div>
+            </div>    
+        </div>
+    </div>
+</section>
+<br><br>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const speedRange = document.getElementById('speedRange');
+    let speed = 0;
+    const value = document.querySelector("#speed_value");
+    const input = document.querySelector("#speedRange");
+    const audio_speed = document.getElementById("audio_speed");
+  const form = document.querySelector("form");
+  const sendButton = document.getElementById("submitBtn");
+  const loading = document.getElementById("loading2");
+  const audioElement = document.getElementById("audioPlayer");
+  const audio_info = document.getElementById("audio_info");
+  const audio_text = document.getElementById("audio_text");
+  const is_not_valid_info = document.getElementById("is_not_valid_info");
+  const is_not_valid_info2 = document.getElementById("is_not_valid_info2");
+  const captcha_error_info = document.getElementById("captcha_error");
+
+	value.textContent = input.value;
+            input.addEventListener("input", (event) => {
+              value.textContent = event.target.value;
+            });
+   // Function to change the playback rate
+   function changePlaybackRate() {
+                speed = speedRange.value;
+                audioElement.playbackRate = speed
+              }
+              speedRange.addEventListener('input', changePlaybackRate);
+              
+              
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    loading.style.display = "block";
+    loading.disabled = true;
+    sendButton.style.display = "none";
+
+    const formData = new FormData(form);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "", true);
+xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          const response = JSON.parse(xhr.responseText);
+          let audioURL = response.audio_url;
+          var text = response.audio_text;
+          var is_not_valid2 = response.is_not_valid2;
+          var is_not_valid = response.is_not_valid;
+          var captcha_error = response.captcha_error;
+          if (is_not_valid){
+              is_not_valid_info2.style.display = "block";
+              captcha_error_info.style.display = "none";
+              is_not_valid_info.style.display = "none";
+              grecaptcha.reset();
+          }
+          else if (is_not_valid2){
+                 is_not_valid_info2.style.display = "none";
+              is_not_valid_info.style.display = "block";
+              captcha_error_info.style.display = "none";
+              grecaptcha.reset();
+          }
+          else if (captcha_error){
+                 is_not_valid_info2.style.display = "none";
+              is_not_valid_info.style.display = "none";
+              captcha_error_info.style.display = "block";
+              grecaptcha.reset();
+          }
+          else {
+          grecaptcha.reset();
+              document.getElementById("myText2").innerHTML = text;
+          // Обновляем аудио элемент на странице
+          audioElement.src = audioURL;
+          is_not_valid_info2.style.display = "none";
+          is_not_valid_info.style.display = "none";
+          captcha_error_info.style.display = "none";
+          audio_speed.style.display = "block";
+          audio_info.style.display = "block";
+          audio_text.style.display = "block";
+          audioElement.style.display = "block";
+          }
+
+
+
+
+        } else {
+          // Обработайте ошибку, если необходимо
+          loading.style.display = "none";
+          loading.disabled = false;
+        sendButton.style.display = "block";
+          console.error("Произошла ошибка при отправке файла");
+        }
+
+        loading.style.display = "none";
+        loading.disabled = false;
+        sendButton.style.display = "block";
+      }
+    };
+
+    xhr.send(formData);
+  });
+});
+
+</script>
+
+
+{% endblock %}
